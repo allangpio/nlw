@@ -1,0 +1,17 @@
+<div id="modal" class="point">
+    <div class="content">
+        {% if saved %}
+            <img src="/assets/check.svg" alt="Cadastrado com sucesso">
+            <h1>Cadastro concluído</h1>
+        {% elif erroCadastro %}
+            <img src="/assets/error.svg" alt="Erro no cadastro">
+            <h1>Erro no cadastro</h1>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+    setTimeout(() => {
+        window.location = "/"
+    }, 3000)
+</script>
